@@ -1,6 +1,8 @@
 import React from "react";
 import NavBar from "./Components/NavBar";
 import HeroSection from "./Components/HeroSection";
+import ContactMe from "./Components/ContactMe";
+import Technologies from "./Components/Technologies";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <div>
           <NavBar />
           <HeroSection />
+          <Technologies />
+          <ContactMe />
         </div>
       </div>
     </>
