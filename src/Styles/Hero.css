@@ -1,0 +1,33 @@
+.person-img {
+  /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(63, 81, 181, 0.3); /* Beautiful shadow colors */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin-right: 5rem;
+}
+.person-img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2),
+    0 20px 40px rgba(63, 81, 181, 0.6); /* Enhanced shadow on hover */
+  transform: scale(1.05); /* Slightly scale the image on hover */
+}
+.hero-container {
+  display: flex;
+  margin-top: 5rem;
+}
+.hero-content {
+  margin-top: 6%;
+  margin-left: 3rem;
+  width: 60%;
+}
+.hero-title {
+  font-weight: 600;
+  color: white;
+  font-size: 4rem;
+  width: 80%;
+}
+
+.hero-description {
+  color: white;
+  width: 78%;
+}
