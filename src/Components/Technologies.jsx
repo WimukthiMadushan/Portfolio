@@ -11,6 +11,13 @@ import { FaPython } from "react-icons/fa6";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import { TbBrandCpp } from "react-icons/tb";
 import { SiFlask } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
+import { SiDjango } from "react-icons/si";
+import { FaNpm } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
 
 function Technologies() {
   const initialVariant = (duration) => ({
@@ -102,12 +109,69 @@ function Technologies() {
           <SiFlask size={50} text-8xl />
         </motion.div>
         <motion.div
-          variants={initialVariant(1.5)}
+          variants={initialVariant(2.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <TbBrandCpp size={50} text-8xl />
+        </motion.div>
+        <motion.div
+          variants={initialVariant(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaDocker size={50} text-8xl />
+        </motion.div>
+        <motion.div
+          variants={initialVariant(1)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaHtml5 size={50} text-8xl />
+        </motion.div>
+        <motion.div
+          variants={initialVariant(1.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaCss3 size={50} text-8xl />
+        </motion.div>
+        <motion.div
+          variants={initialVariant(2.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaGitAlt size={50} text-8xl />
+        </motion.div>
+
+        <motion.div
+          variants={initialVariant(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiDjango size={50} text-8xl />
+        </motion.div>
+        <motion.div
+          variants={initialVariant(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaNpm size={50} text-8xl />
+        </motion.div>
+        <motion.div
+          variants={initialVariant(2.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaAws size={50} text-8xl />
         </motion.div>
       </div>
     </div>

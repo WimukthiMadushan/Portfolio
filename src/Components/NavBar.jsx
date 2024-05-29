@@ -1,8 +1,10 @@
 import React from "react";
 import "./../Styles/NavBar.css";
 import Github from "./../Images/github.png";
+import { FaGithub } from "react-icons/fa6";
 import Instagram from "./../Images/instagram.png";
 import Linkedin from "./../Images/linkedin.png";
+import { FaLinkedin } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 function NavBar() {
   return (
@@ -14,13 +16,17 @@ function NavBar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="github-icon" src={Github} alt="" />
+          <FaGithub size={25} />
         </Link>
-        <Link>
-          <img src={Instagram} alt="" />
-        </Link>
-        <Link>
-          <img src={Linkedin} alt="" />
+
+        <Link
+          to={
+            "https://www.linkedin.com/in/wimukthi-madushan-bandara-22a375267/"
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin size={25} />
         </Link>
       </div>
     </div>
