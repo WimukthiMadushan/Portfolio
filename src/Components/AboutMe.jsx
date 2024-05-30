@@ -3,7 +3,7 @@ import "./../Styles/AboutMe.css";
 import About from "./../Images/about.jpg";
 function AboutMe() {
   return (
-    <div className="about-me-container">
+    <div className="about-me-container" id="about">
       <div className="about-me-img">
         <img className="about-me-img" src={About} alt="" />
       </div>

@@ -2,11 +2,16 @@ import React from "react";
 import Cloud from "./../Images/Cloud.png";
 import Person from "./../Images/Person.png";
 import "./../Styles/Hero.css";
+import SideBar from "./SideBar";
 function HeroSection() {
   return (
-    <div className="hero-container">
+    <div className="hero-container" id="home">
+      <div className="sidebar">
+        <SideBar />
+      </div>
+
       <div className="hero-content">
-        <h1 className="hero-title">Full Stack Developer..</h1>
+        <h1 className="hero-title">Full Stack Developer.</h1>
         <h2 className="hero-description">
           I am a passionate full stack developer with a knack for crafting
           robust and scalable web applications. With 5 years of hands-on

@@ -33,7 +33,7 @@ function Technologies() {
     },
   });
   return (
-    <div className="technologies-container">
+    <div className="technologies-container" id="technologies">
       <h1 className="technologies-title">Technologies</h1>
       <div className="technologies-icon-container">
         <motion.div

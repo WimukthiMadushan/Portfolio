@@ -5,6 +5,7 @@ import ContactMe from "./Components/ContactMe";
 import Technologies from "./Components/Technologies";
 import AboutMe from "./Components/AboutMe";
 import Projects from "./Components/Projects";
+import SideBar from "./Components/SideBar";
 
 function App() {
   return (

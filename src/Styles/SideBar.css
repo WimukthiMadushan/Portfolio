@@ -1,0 +1,8 @@
+.sidebar {
+  background-color: transparent;
+  background: transparent;
+  font-size: 21px;
+  font-weight: bold;
+  width: 4%;
+  row-gap: 1.5rem;
+}
