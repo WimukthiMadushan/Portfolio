@@ -42,3 +42,11 @@
   font-size: 1.2rem;
   margin-top: 0.5rem;
 }
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 40%;
+  }
+  .card-title {
+    height: 100px;
+  }
+}

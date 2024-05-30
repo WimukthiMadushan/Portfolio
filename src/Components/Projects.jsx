@@ -35,6 +35,7 @@ function Projects() {
       <div className="card-container">
         {details.map((details) => (
           <Card
+            key={details.title}
             title={details.title}
             description={details.description}
             link={details.link}

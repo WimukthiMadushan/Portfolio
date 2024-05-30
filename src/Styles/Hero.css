@@ -1,20 +1,21 @@
+.hero-container {
+  display: flex;
+  margin-top: 5rem;
+  width: 100%;
+}
 .person-img {
-  /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional: add rounded corners */
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1),
-    0 10px 20px rgba(63, 81, 181, 0.3); /* Beautiful shadow colors */
+    0 10px 20px rgba(63, 81, 181, 0.3);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   margin-right: 5rem;
 }
 .person-img:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2),
-    0 20px 40px rgba(63, 81, 181, 0.6); /* Enhanced shadow on hover */
-  transform: scale(1.05); /* Slightly scale the image on hover */
+    0 20px 40px rgba(63, 81, 181, 0.6);
+  transform: scale(1.05);
 }
-.hero-container {
-  display: flex;
-  margin-top: 5rem;
-}
+
 .hero-content {
   margin-top: 6%;
   margin-left: 3rem;
@@ -81,4 +82,100 @@
   box-shadow: 0 0 10px rgba(63, 81, 181, 0.6);
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .person-img {
+    order: -1;
+    border-radius: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1),
+      0 10px 20px rgba(63, 81, 181, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin-right: 5rem;
+    width: 40%;
+    object-fit: cover;
+  }
+  .person-img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2),
+      0 20px 40px rgba(63, 81, 181, 0.6);
+    transform: scale(1.05);
+  }
+
+  .hero-content {
+    margin-top: 6%;
+    width: 100%;
+    text-align: justify;
+  }
+  .hero-title {
+    display: inline-block;
+    font-weight: 600;
+    color: white;
+    font-size: 2rem;
+    border-right: 3px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.5s steps(25, end) infinite alternate;
+  }
+  @keyframes cursor {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #fcfcfc;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 59%;
+    }
+  }
+
+  .hero-description {
+    color: white;
+    width: 85%;
+    font-size: 1rem;
+  }
+  .hero-button {
+    background: transparent;
+    box-shadow: 0 0 10px rgba(63, 81, 181, 0.3);
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: glow 2.5s infinite alternate;
+  }
+  @keyframes glow {
+    0%,
+    100% {
+      box-shadow: 0 0 5px rgba(63, 81, 181, 0.3), 0 0 5px rgba(63, 81, 181, 0.3),
+        0 0 5px rgba(63, 81, 181, 0.3), 0 0 5px rgba(63, 81, 181, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 5px rgba(63, 81, 181, 0.6), 0 0 5px rgba(63, 81, 181, 0.6),
+        0 0 5px rgba(63, 81, 181, 0.6), 0 0 5px rgba(63, 81, 181, 0.6);
+    }
+  }
+
+  .hero-button:hover {
+    box-shadow: 0 0 10px rgba(63, 81, 181, 0.6);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
 }

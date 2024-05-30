@@ -31,3 +31,31 @@
 .about-me-sub-topics {
   font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .about-me-container {
+    width: 100%;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-img {
+    width: 90%;
+    object-fit: cover;
+    border-radius: 350px;
+  }
+  .about-me-description {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .about-me-sub-topics {
+    font-size: 1.5rem;
+  }
+}

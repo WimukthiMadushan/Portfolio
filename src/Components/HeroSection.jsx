@@ -21,7 +21,9 @@ function HeroSection() {
           create innovative solutions that drive business growth and deliver
           exceptional user experiences.
         </h2>
-        <button className="hero-button">Download CV</button>
+        <div className="hero-button-container">
+          <button className="hero-button">Download CV</button>
+        </div>
       </div>
       <img className="person-img" src={Person} alt="" />
     </div>

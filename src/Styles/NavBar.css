@@ -8,7 +8,9 @@
   padding-left: 7%;
   padding-right: 5%;
   margin-top: 0.6rem;
+  box-sizing: border-box;
 }
+
 .navbar-title {
   font-size: 1.5rem;
   font-weight: 600;
@@ -25,6 +27,51 @@
   width: 23px;
   height: 23px;
 }
+
 .navbar-icons > a > img:hover {
   transform: scale(1.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .navbar-title {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .navbar-icons {
+    gap: 15px;
+  }
+
+  .navbar-icons > a > img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .navbar-title {
+    font-size: 1rem;
+  }
+
+  .navbar-icons {
+    gap: 10px;
+  }
+
+  .navbar-icons > a > img {
+    width: 18px;
+    height: 18px;
+  }
 }
