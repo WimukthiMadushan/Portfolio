@@ -5,27 +5,32 @@ function Projects() {
   const details = [
     {
       title: "Airline Reservation System",
-      description: "Description 1",
+      description:
+        "Created an Airline Reservation System using React, Flask, and MySQL. This app lets users search for flights, book tickets, and manage reservations easily. React handles the front-end, Flask manages the back-end, and MySQL stores the data securely.",
       link: "https://github.com/WimukthiMadushan/Airline_Reservation_System",
     },
     {
       title: "Full Stack Blog App Design",
-      description: "Description 2",
+      description:
+        "Designed a full-stack blog application using the MERN stack for practice. This project involved creating a RESTful API with Node.js and Express.js for the backend, MongoDB as the database, and React.js for building a dynamic and interactive front-end.",
       link: "https://github.com/WimukthiMadushan/Blog_App",
     },
     {
       title: "Book Shop for CRUD operations",
-      description: "Description 3",
+      description:
+        "Built a book shop application to practice CRUD operations using Node.js and Express.js. Users can perform Create, Read, Update, and Delete operations on book entries. This project honed skills in backend development, handling HTTP requests, and database interaction.",
       link: "https://github.com/WimukthiMadushan/Book_Shop",
     },
     {
       title: "Portfolio Website Design",
-      description: "Description 4",
+      description:
+        "Created a responsive portfolio website to showcase personal projects, skills, and experience. The site features a modern design with smooth navigation, built using React js. This project demonstrates my web design creativity and front-end development skills.",
       link: "https://github.com/WimukthiMadushan/Portfolio",
     },
     {
       title: "Meta Advanced react project",
-      description: "Description 5",
+      description:
+        "This is a project that I have done to practice my react skills. This project is a simple react project that uses react hooks and context API.",
       link: "https://github.com/WimukthiMadushan/meta-advanced-react-project",
     },
   ];
