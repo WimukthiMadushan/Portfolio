@@ -42,7 +42,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl  border-4 border-neutral-800 p-4"
         >
-          <FaReact size={50} text-8xl />
+          <FaReact size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(3)}
@@ -50,7 +50,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiMongodb size={50} text-8xl />
+          <SiMongodb size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(3.5)}
@@ -58,7 +58,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiMysql size={50} text-8xl />
+          <SiMysql size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(2)}
@@ -66,7 +66,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <IoLogoJavascript size={50} text-8xl />
+          <IoLogoJavascript size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(1.5)}
@@ -74,7 +74,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaJava size={50} text-8xl />
+          <FaJava size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(3.5)}
@@ -82,7 +82,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <BiLogoSpringBoot size={50} text-8xl />
+          <BiLogoSpringBoot size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(3)}
@@ -90,7 +90,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <DiNodejs size={50} text-8xl />
+          <DiNodejs size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(3)}
@@ -98,7 +98,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaPython size={50} text-8xl />
+          <FaPython size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(4)}
@@ -106,7 +106,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiFlask size={50} text-8xl />
+          <SiFlask size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(2.5)}
@@ -114,7 +114,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <TbBrandCpp size={50} text-8xl />
+          <TbBrandCpp size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(2)}
@@ -122,7 +122,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaDocker size={50} text-8xl />
+          <FaDocker size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(1)}
@@ -130,7 +130,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaHtml5 size={50} text-8xl />
+          <FaHtml5 size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(1.5)}
@@ -138,7 +138,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaCss3 size={50} text-8xl />
+          <FaCss3 size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(2.5)}
@@ -146,7 +146,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaGitAlt size={50} text-8xl />
+          <FaGitAlt size={50} />
         </motion.div>
 
         <motion.div
@@ -155,7 +155,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiDjango size={50} text-8xl />
+          <SiDjango size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(3.5)}
@@ -163,7 +163,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaNpm size={50} text-8xl />
+          <FaNpm size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(2.5)}
@@ -171,7 +171,7 @@ function Technologies() {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaAws size={50} text-8xl />
+          <FaAws size={50} />
         </motion.div>
       </div>
     </div>

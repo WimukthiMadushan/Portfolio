@@ -18,7 +18,7 @@ function SideBar() {
       style={{
         position: "fixed",
         boxShadow: "0 0 10px rgba(63, 81, 181, 0.3)",
-        borderRadius: "5px",
+        borderRadius: "10px",
         border: "none",
         height: "50%",
         gap: "2rem",
@@ -32,8 +32,8 @@ function SideBar() {
             // only apply styles on first level elements of the tree
             if (level === 0)
               return {
-                color: disabled ? "#f5d9ff" : "white",
-                backgroundColor: active ? "#eecef9" : "transparent",
+                color: disabled ? "#000000" : "white",
+                backgroundColor: active ? "#000000" : "#000000",
               };
           },
         }}
