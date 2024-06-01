@@ -20,4 +20,38 @@
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  .license-and-certificates > h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Medium devices (landscape tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+  .certificates-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* This will create two columns */
+    gap: 20px; /* Adjust spacing between cards */
+    justify-content: center; /* Center the grid container */
+    max-width: 800px; /* Optional: Set a max width for the container */
+    padding: 20px; /* Optional: Add some padding around the container */
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .certificates-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .license-and-certificates > h1 {
+    font-size: 2rem;
+  }
 }

@@ -1,18 +1,17 @@
 .about-me-container {
-  width: 100%;
+  width: 100vw;
   color: white;
   text-align: justify;
   display: flex;
-  padding-left: 8%;
-  padding-right: 5%;
-  margin-top: 7rem;
   gap: 5rem;
 }
 .about-me-img {
-  width: 150%;
-  height: 100%;
+  flex: 5;
+  width: 100%;
+  object-fit: cover;
   border-radius: 10px;
   margin-top: 6rem;
+  margin-left: 2rem;
 }
 .about-me-title {
   color: white;
@@ -22,47 +21,20 @@
   margin-bottom: 1rem;
 }
 .about-me-description {
+  flex: 7;
   color: white;
   font-size: 1rem;
-  font-weight: 400;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  font-weight: 300;
+  margin: 1rem 2rem 1rem 0;
 }
 .about-me-sub-topics {
   font-size: 1.5rem;
 }
-
 @media only screen and (min-width: 992px) and (max-width: 1023px) {
-  .about-me-container {
-    width: 100%;
-    color: white;
-    text-align: justify;
-    display: flex;
-    padding-left: 7%;
-    padding-right: 5%;
-    margin-top: 7rem;
-    gap: 3rem;
-  }
-  .about-me-img {
-    flex: 5;
-    border-radius: 10px;
-  }
-  .about-me-title {
-    color: white;
-    font-size: 3rem;
-    font-weight: 600;
-
-    margin-bottom: 1rem;
-  }
   .about-me-description {
-    flex: 7;
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 300;
-    margin-top: 1rem;
+    font-size: 0.8rem;
   }
 }
-
 /* Medium devices (landscape tablets) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-me-container {
@@ -70,78 +42,82 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
   }
   .about-me-img {
-    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    width: 70%;
     object-fit: cover;
     border-radius: 50%;
     justify-self: center;
   }
   .about-me-title {
-    color: white;
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
   }
   .about-me-description {
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 300;
-    margin-top: 1rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .about-me-container {
-    width: 100%;
-    color: white;
-    padding-left: 5%;
-    padding-right: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-me-img {
+    font-size: 0.8rem;
     width: 90%;
-    object-fit: cover;
-    border-radius: 350px;
-  }
-  .about-me-description {
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 300;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .about-me-sub-topics {
-    font-size: 1.5rem;
+    margin-left: 2rem;
   }
 }
-
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 425px) and (max-width: 768px) {
   .about-me-container {
-    width: 100%;
-    color: white;
-
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
-
   .about-me-img {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    width: 70%;
     object-fit: cover;
     border-radius: 50%;
+    justify-self: center;
+  }
+  .about-me-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .about-me-description {
+    font-size: 0.8rem;
+    width: 90%;
+    margin-left: 2rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .about-me-img-container {
+    width: 80%;
+    margin-bottom: 0;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+  }
+  .about-me-img {
+    margin: 0;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 50%;
+    justify-self: center;
   }
   .about-me-description {
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: 300;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-left: 1rem;
   }
   .about-me-sub-topics {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }

@@ -1,11 +1,10 @@
 .hero-container {
   display: flex;
   margin-top: 5rem;
-  padding-right: 2.5rem;
+  margin-right: 5%;
 }
 .person-img {
   border-radius: 10px;
-
   object-fit: cover;
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1),
@@ -20,7 +19,8 @@
 
 .hero-content {
   margin-top: 6%;
-  padding-left: 4.5rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
 }
 .hero-title {
   display: inline-block;
@@ -52,7 +52,6 @@
 
 .hero-description {
   color: white;
-  width: 90%;
 }
 .hero-button {
   background: transparent;
@@ -361,7 +360,7 @@
   .hero-description {
     color: white;
     font-size: 1rem;
-    width: 95%;
+    width: 100%;
   }
   .hero-button {
     background: transparent;
