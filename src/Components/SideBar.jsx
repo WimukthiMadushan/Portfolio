@@ -18,7 +18,7 @@ function SideBar() {
       style={{
         position: "fixed",
         boxShadow: "0 0 10px rgba(63, 81, 181, 0.3)",
-        borderRadius: "10px",
+        borderRadius: "20px",
         border: "none",
         height: "50%",
         gap: "2rem",

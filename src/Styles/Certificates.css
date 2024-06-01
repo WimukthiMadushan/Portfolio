@@ -1,0 +1,23 @@
+.certificates-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* This will create two columns */
+  gap: 20px; /* Adjust spacing between cards */
+  justify-content: center; /* Center the grid container */
+  max-width: 800px; /* Optional: Set a max width for the container */
+  padding: 20px; /* Optional: Add some padding around the container */
+  box-sizing: border-box;
+}
+.license-and-certificates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.license-and-certificates > h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}

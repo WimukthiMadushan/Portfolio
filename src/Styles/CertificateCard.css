@@ -1,0 +1,36 @@
+.certificates-card-container {
+  display: flex;
+  width: 500px;
+  height: 75px;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 1%;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(63, 81, 181, 0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.certificates-card-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2),
+    0 20px 40px rgba(63, 81, 181, 0.6);
+  transform: scale(1.05);
+}
+
+.card-image {
+  flex: 3;
+  padding: 2%;
+  border-radius: 5px;
+}
+.card-image img {
+  width: 70%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.card-desc {
+  flex: 9;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: white;
+}

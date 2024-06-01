@@ -6,6 +6,7 @@ import Technologies from "./Components/Technologies";
 import AboutMe from "./Components/AboutMe";
 import Projects from "./Components/Projects";
 import SideBar from "./Components/SideBar";
+import Certificates from "./Components/Certificates";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Technologies />
           <AboutMe />
           <Projects />
+          <Certificates />
           <ContactMe />
         </div>
       </div>
