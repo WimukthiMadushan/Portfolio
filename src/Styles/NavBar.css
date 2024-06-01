@@ -23,13 +23,9 @@
   gap: 25px;
 }
 
-.navbar-icons > a > img {
-  width: 23px;
-  height: 23px;
-}
-
-.navbar-icons > a > img:hover {
+.navbar-icons > a:hover {
   transform: scale(1.2);
+  transition: all 0.2s;
 }
 
 /* Responsive styles */

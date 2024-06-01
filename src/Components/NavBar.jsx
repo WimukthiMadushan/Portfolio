@@ -1,9 +1,6 @@
 import React from "react";
 import "./../Styles/NavBar.css";
-import Github from "./../Images/github.png";
 import { FaGithub } from "react-icons/fa6";
-import Instagram from "./../Images/instagram.png";
-import Linkedin from "./../Images/linkedin.png";
 import { FaLinkedin } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 function NavBar() {
