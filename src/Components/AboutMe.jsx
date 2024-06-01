@@ -4,12 +4,12 @@ import About from "./../Images/about.jpg";
 function AboutMe() {
   return (
     <div className="about-me-container" id="about">
-      <div className="about-me-img">
+      <div className="about-me-img-container">
         <img className="about-me-img" src={About} alt="" />
       </div>
       <div className="about-me-description">
         <h1 className="about-me-title">About Me.</h1>
-        <p className="about-me-description">
+        <p>
           Hello! I'm W.G Wimukthi Madushan Bandara, a passionate and dedicated
           full-stack web developer currently studying at the Department of
           Computer Science and Engineering, Faculty of Engineering, University

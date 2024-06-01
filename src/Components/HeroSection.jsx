@@ -1,5 +1,4 @@
 import React from "react";
-import Cloud from "./../Images/Cloud.png";
 import Person from "./../Images/Person.png";
 import "./../Styles/Hero.css";
 import SideBar from "./SideBar";
@@ -9,7 +8,6 @@ function HeroSection() {
       <div className="sidebar">
         <SideBar />
       </div>
-
       <div className="hero-content">
         <h1 className="hero-title">Full Stack Developer.</h1>
         <h2 className="hero-description">
