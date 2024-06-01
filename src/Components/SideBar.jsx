@@ -1,6 +1,12 @@
 import React from "react";
 import "./../Styles/SideBar.css";
-import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import {
+  Sidebar,
+  Menu,
+  MenuItem,
+  SubMenu,
+  menuClasses,
+} from "react-pro-sidebar";
 import { HashLink as Link } from "react-router-hash-link";
 import { FaHome } from "react-icons/fa";
 import { MdBiotech } from "react-icons/md";
@@ -20,20 +26,26 @@ function SideBar() {
         boxShadow: "0 0 10px rgba(63, 81, 181, 0.3)",
         borderRadius: "20px",
         border: "none",
-        height: "50%",
+        height: "45%",
         gap: "2rem",
         marginTop: "none",
       }}
-      rootStyles={{}}
     >
       <Menu
+        className="menu"
         menuItemStyles={{
           button: ({ level, active, disabled }) => {
             // only apply styles on first level elements of the tree
             if (level === 0)
               return {
-                color: disabled ? "#000000" : "white",
-                backgroundColor: active ? "#000000" : "#000000",
+                color: disabled ? "inherit" : "white",
+                backgroundColor: active ? "inherit" : "inherit",
+                "&:hover": {
+                  backgroundColor: "inherit",
+                  scale: 1.1,
+                  transform: "scale(1.2)",
+                  transition: "all 0.1s ease-in-out",
+                },
               };
           },
         }}
