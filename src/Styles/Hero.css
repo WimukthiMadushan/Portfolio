@@ -1,12 +1,10 @@
 .hero-container {
   display: flex;
   margin-top: 5rem;
-  margin-right: 5%;
 }
 .person-img {
   border-radius: 10px;
   object-fit: cover;
-
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1),
     0 10px 20px rgba(63, 81, 181, 0.3);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -30,7 +28,7 @@
   border-right: 3px solid;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3.5s steps(20, end) infinite alternate;
+  animation: typing 3.5s steps(25, end) infinite alternate;
 }
 @keyframes cursor {
   from,
@@ -137,7 +135,7 @@
 
   .hero-description {
     color: white;
-    width: 78%;
+    width: 80%;
   }
   .hero-button {
     background: transparent;
@@ -187,6 +185,11 @@
     overflow: hidden;
     animation: typing 3.5s steps(20, end) infinite alternate;
   }
+  .hero-content {
+    margin-top: 6%;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
   @keyframes cursor {
     from,
     to {
@@ -201,7 +204,7 @@
       width: 0;
     }
     to {
-      width: 60%;
+      width: 68%;
     }
   }
 }
@@ -223,7 +226,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1),
       0 10px 20px rgba(63, 81, 181, 0.3);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    width: 50%;
+    width: 45%;
     object-fit: cover;
   }
   .person-img:hover {
@@ -261,14 +264,14 @@
       width: 0;
     }
     to {
-      width: 48%;
+      width: 50%;
     }
   }
 
   .hero-description {
     color: white;
     font-size: 1rem;
-    width: 90%;
+    width: 100%;
   }
   .hero-button {
     background: transparent;
@@ -353,7 +356,7 @@
       width: 0;
     }
     to {
-      width: 75%;
+      width: 50%;
     }
   }
 

@@ -33,12 +33,11 @@ function AboutMe() {
         <h3 className="about-me-sub-topics">Technical Skills</h3>
         <ul>
           <li>
-            <strong>Front-End Development</strong>: HTML, CSS, JavaScript,
-            React, Angular, Vue.js, Next.js
+            <strong>Front-End Development</strong>: HTML, CSS, JavaScript, React
           </li>
           <li>
             <strong>Back-End Development</strong>: Node.js, Express.js,
-            Springboot, Django, Flask
+            Springboot, Flask
           </li>
           <li>
             <strong>Database Management</strong>: MySQL, MongoDB, SQLite

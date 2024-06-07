@@ -11,13 +11,12 @@ function HeroSection() {
       <div className="hero-content">
         <h1 className="hero-title">Full Stack Developer.</h1>
         <h2 className="hero-description">
-          I am a passionate full stack developer with a knack for crafting
-          robust and scalable web applications. With 5 years of hands-on
-          experience, I have honed my skills in front-end technologies like
-          React and Next.js, as well as back-end technologies like Node.js,
-          MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to
-          create innovative solutions that drive business growth and deliver
-          exceptional user experiences.
+          I am a passionate full stack web developer currently pursuing my
+          studies at the University of Moratuwa's CSE department. With a strong
+          foundation in both front-end and back-end technologies, I am dedicated
+          to building efficient and innovative web solutions. My education and
+          hands-on experience enable me to tackle complex development challenges
+          and contribute effectively to dynamic projects.
         </h2>
         <div className="hero-button-container">
           <button className="hero-button">Download CV</button>
