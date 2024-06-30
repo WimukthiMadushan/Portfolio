@@ -29,7 +29,7 @@
   border-right: 3px solid;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3.5s steps(30, end) infinite alternate;
+  animation: typing 3.5s steps(25, end) infinite alternate;
 }
 @keyframes cursor {
   from,
@@ -80,4 +80,38 @@
   box-shadow: 0 0 10px rgba(63, 81, 181, 0.6);
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 1050px) {
+}
+
+@media (max-width: 750px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .person-img {
+    width: 350px;
+    border-radius: 50%;
+    order: -1;
+  }
+  .sidebar {
+    display: none;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 66%;
+    }
+  }
+  .hero-content {
+    padding: 0 1rem;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
 }

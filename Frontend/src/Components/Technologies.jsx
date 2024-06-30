@@ -40,138 +40,138 @@ function Technologies() {
           variants={initialVariant(2.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl  border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl  border-4 border-neutral-800 p-4"
         >
-          <FaReact size={50} />
+          <FaReact className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiMongodb size={50} />
+          <SiMongodb className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(3.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiMysql size={50} />
+          <SiMysql className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <IoLogoJavascript size={50} />
+          <IoLogoJavascript className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(1.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaJava size={50} />
+          <FaJava className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(3.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <BiLogoSpringBoot size={50} />
+          <BiLogoSpringBoot className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <DiNodejs size={50} />
+          <DiNodejs className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaPython size={50} />
+          <FaPython className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(4)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiFlask size={50} />
+          <SiFlask className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(2.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <TbBrandCpp size={50} />
+          <TbBrandCpp className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(2)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaDocker size={50} />
+          <FaDocker className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(1)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaHtml5 size={50} />
+          <FaHtml5 className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(1.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaCss3 size={50} />
+          <FaCss3 className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(2.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaGitAlt size={50} />
+          <FaGitAlt className="item" size={50} />
         </motion.div>
 
         <motion.div
           variants={initialVariant(3)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiDjango size={50} />
+          <SiDjango className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(3.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaNpm size={50} />
+          <FaNpm className="item" size={50} />
         </motion.div>
         <motion.div
           variants={initialVariant(2.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
+          className="item-border rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaAws size={50} />
+          <FaAws className="item" size={50} />
         </motion.div>
       </div>
     </div>

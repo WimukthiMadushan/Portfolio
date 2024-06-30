@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./../Styles/ContactMe.css";
 
 function ContactMe() {
@@ -19,25 +21,45 @@ function ContactMe() {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    //console.log(formData);
-    try {
-      const response = await fetch("http://localhost:5000/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
 
-      const data = await response.text();
-      console.log(data); // Log the response from the server
-      setStatus("SUCCESS");
-    } catch (error) {
-      console.error("Error:", error);
-      setStatus("FAILED");
-    }
+    emailjs
+      .send(
+        "service_ebtbpxg", // Replace with your EmailJS service ID
+        "template_reit869", // Replace with your EmailJS template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        "7e650nvod00hquts4"
+      )
+      .then(
+        (response) => {
+          //console.log("SUCCESS!", response.status, response.text);
+          setStatus("SUCCESS");
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+          toast.success("Succesfull!", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          setStatus("FAILED");
+          toast.error("Failed!!");
+        }
+      );
   };
 
   return (
@@ -75,6 +97,7 @@ function ContactMe() {
         </div>
         <div className="button-container">
           <button type="submit">Send</button>
+          <ToastContainer />
         </div>
       </form>
       {status === "SUCCESS" && (

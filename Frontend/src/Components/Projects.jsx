@@ -16,10 +16,10 @@ function Projects() {
       link: "https://github.com/WimukthiMadushan/Blog_App",
     },
     {
-      title: "Book Shop for CRUD operations",
+      title: "Food Delivery Web-Application",
       description:
-        "Built a book shop application to practice CRUD operations using Node.js and Express.js. Users can perform Create, Read, Update, and Delete operations on book entries. This project honed skills in backend development, handling HTTP requests, and database interaction.",
-      link: "https://github.com/WimukthiMadushan/Book_Shop",
+        "Comprehensive food delivery web application using the MERN stack (MongoDB, Express.js, React.js, Node.js). This project refined my skills in full-stack development, integrating responsive front-end interfaces with a robust backend, and efficient database handling",
+      link: "https://github.com/WimukthiMadushan/Food-Delivery.git",
     },
     {
       title: "Portfolio Website Design",
@@ -32,6 +32,12 @@ function Projects() {
       description:
         "This is a project that I have done to practice my react skills. This project is a simple react project that uses react hooks and context API.",
       link: "https://github.com/WimukthiMadushan/meta-advanced-react-project",
+    },
+    {
+      title: "Interactive Library Managment System",
+      description:
+        "This is my semester 5 project done using React, Node js, express and mySql database.",
+      link: "https://github.com/WimukthiMadushan/Interactive-library-management-system-.git",
     },
   ];
   return (

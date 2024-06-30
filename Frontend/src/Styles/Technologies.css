@@ -23,21 +23,20 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-@media only screen and (max-width: 400px) {
+@media (max-width: 750px) {
   .technologies-container {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .technologies-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
-  .technologies-icon-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  .item-border {
+    width: 70px;
+    height: 70px;
+  }
+  .item {
+    width: 100%;
+    padding-bottom: 60%;
   }
 }

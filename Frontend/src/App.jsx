@@ -18,6 +18,7 @@ function App() {
         <div>
           <NavBar />
           <HeroSection />
+
           <Technologies />
           <AboutMe />
           <Projects />
