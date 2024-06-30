@@ -1,0 +1,83 @@
+.hero-container {
+  display: flex;
+  margin-top: 5rem;
+  padding: 0 5rem 0 1rem;
+}
+.person-img {
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1),
+    0 10px 20px rgba(63, 81, 181, 0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.person-img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2),
+    0 20px 40px rgba(63, 81, 181, 0.6);
+  transform: scale(1.05);
+}
+
+.hero-content {
+  margin-top: 6%;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+.hero-title {
+  display: inline-block;
+  font-weight: 600;
+  color: white;
+  font-size: 3rem;
+  border-right: 3px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3.5s steps(30, end) infinite alternate;
+}
+@keyframes cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fcfcfc;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+.hero-description {
+  color: white;
+}
+.hero-button {
+  background: transparent;
+  box-shadow: 0 0 10px rgba(63, 81, 181, 0.3);
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: glow 2.5s infinite alternate;
+}
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.3), 0 0 5px rgba(63, 81, 181, 0.3),
+      0 0 5px rgba(63, 81, 181, 0.3), 0 0 5px rgba(63, 81, 181, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 5px rgba(63, 81, 181, 0.6), 0 0 5px rgba(63, 81, 181, 0.6),
+      0 0 5px rgba(63, 81, 181, 0.6), 0 0 5px rgba(63, 81, 181, 0.6);
+  }
+}
+
+.hero-button:hover {
+  box-shadow: 0 0 10px rgba(63, 81, 181, 0.6);
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
