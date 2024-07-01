@@ -33,58 +33,7 @@
   font-size: 1.5rem;
 }
 
-/* Medium devices (landscape tablets) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-me-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .about-me-img {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    width: 70%;
-    object-fit: cover;
-    border-radius: 50%;
-    justify-self: center;
-  }
-  .about-me-title {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  .about-me-description {
-    font-size: 0.8rem;
-    width: 90%;
-    margin-left: 2rem;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 768px) {
-  .about-me-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .about-me-img {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    width: 70%;
-    object-fit: cover;
-    border-radius: 50%;
-    justify-self: center;
-  }
-  .about-me-title {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  .about-me-description {
-    font-size: 0.8rem;
-    width: 90%;
-    margin-left: 2rem;
-  }
-}
-@media only screen and (max-width: 425px) {
+@media (max-width: 1050px) {
   .about-me-container {
     display: flex;
     flex-direction: column;
@@ -92,31 +41,29 @@
     align-items: center;
     padding-left: 1rem;
   }
-  .about-me-title {
-    font-size: 2rem;
-    text-align: center;
-  }
-  .about-me-img-container {
-    margin-bottom: 0;
-    object-fit: cover;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-  }
   .about-me-img {
-    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 0;
     width: 80%;
     object-fit: cover;
     border-radius: 50%;
     justify-self: center;
   }
-  .about-me-description {
-    color: white;
-    font-size: 0.7rem;
-    font-weight: 300;
-    margin-top: -2rem;
+  .about-me-title {
+    font-size: 2.5rem;
+    text-align: center;
   }
-  .about-me-sub-topics {
-    font-size: 1.3rem;
+  .about-me-description {
+    font-size: 0.8rem;
+    width: 90%;
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 750px) {
+  .about-me-container {
+    padding: 0;
+  }
+  .about-me-img {
+    margin-left: 3.4rem;
   }
 }
