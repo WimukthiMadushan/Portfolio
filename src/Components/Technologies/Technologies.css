@@ -1,0 +1,101 @@
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.icon {
+  height: 3rem; /* 12x12 size equivalent */
+  width: 3rem;
+  color: black;
+}
+
+.technology-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+  animation: bounce infinite alternate;
+}
+
+.duration-1 {
+  animation-duration: 1s;
+}
+
+.duration-2 {
+  animation-duration: 1.1s;
+}
+
+.duration-3 {
+  animation-duration: 1.2s;
+}
+
+.duration-4 {
+  animation-duration: 1.3s;
+}
+
+.duration-5 {
+  animation-duration: 1.4s;
+}
+
+.duration-6 {
+  animation-duration: 1.5s;
+}
+
+.duration-7 {
+  animation-duration: 1.6s;
+}
+
+.duration-8 {
+  animation-duration: 1.7s;
+}
+
+.duration-9 {
+  animation-duration: 1.8s;
+}
+
+.duration-10 {
+  animation-duration: 1.9s;
+}
+
+.duration-11 {
+  animation-duration: 2s;
+}
+
+.duration-12 {
+  animation-duration: 2.1s;
+}
+
+.duration-13 {
+  animation-duration: 2.2s;
+}
+
+.duration-14 {
+  animation-duration: 2.3s;
+}
+
+.duration-15 {
+  animation-duration: 2.4s;
+}
+
+.duration-16 {
+  animation-duration: 2.5s;
+}
+
+.duration-17 {
+  animation-duration: 2.6s;
+}
+
+.duration-18 {
+  animation-duration: 2.7s;
+}
+
+.technology-item:hover {
+  transform: translateY(-10px) scale(1.05);
+}
