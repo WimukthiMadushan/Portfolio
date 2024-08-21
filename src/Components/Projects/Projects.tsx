@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { FaReact, FaNode } from "react-icons/fa";
 import { SiExpress, SiMysql, SiExpo, SiFlask } from "react-icons/si";

@@ -1,11 +1,9 @@
-import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import {
   FaFacebookF,
   FaLinkedinIn,
   FaPhone,
   FaGithub,
-  FaArrowUp,
   FaWhatsapp,
 } from "react-icons/fa";
 import { LuArrowUpSquare } from "react-icons/lu";

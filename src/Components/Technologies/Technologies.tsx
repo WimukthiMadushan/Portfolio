@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaReact,
   FaNodeJs,
@@ -9,7 +8,6 @@ import {
   FaJava,
   FaJs,
   FaCuttlefish,
-  FaDatabase,
 } from "react-icons/fa";
 import {
   SiNextdotjs,

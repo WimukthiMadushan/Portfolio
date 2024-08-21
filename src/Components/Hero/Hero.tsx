@@ -1,4 +1,3 @@
-import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import Typing from "react-typing-effect";
 import Profile from "./../../Images/my.jpg";
