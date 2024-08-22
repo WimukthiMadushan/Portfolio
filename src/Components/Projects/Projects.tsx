@@ -114,7 +114,7 @@ function Projects() {
                   className="text-blue-500 hover:text-black hover:underline"
                   target="_blank"
                 >
-                  View Github
+                  View On Github
                 </Link>
                 <div className="mt-2 flex items-center gap-2 text-xs text-gray-500">
                   {project.technologies.map((tech, index) => (
