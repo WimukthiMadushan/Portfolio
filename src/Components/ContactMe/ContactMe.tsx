@@ -65,11 +65,11 @@ function ContactMe() {
         <div className="mx-auto max-w-xl space-y-6">
           <div className="space-y-2 text-center">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-              Get in Touch
+              Contact Me
             </h2>
             <p className="text-gray-600 md:text-lg">
               Have a question or want to work together? Fill out the form below
-              and we'll get back to you as soon as possible.
+              and I'll get back to you as soon as possible.
             </p>
           </div>
           <form className="space-y-4" onSubmit={handleSubmit}>
