@@ -12,13 +12,15 @@ function ContactMe() {
   });
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
-  const [modalType, setModalType] = useState("success"); // "success" or "error"
+  const [modalType, setModalType] = useState<"success" | "error">("success");
 
-  const handleChange = (e: any) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Check if any field is empty
@@ -60,21 +62,24 @@ function ContactMe() {
   };
 
   return (
-    <section className="bg-gray-100 py-12 md:py-24">
+    <section className="bg-gray-50 py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mx-auto max-w-xl space-y-6">
-          <div className="space-y-2 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+        <div className="mx-auto max-w-3xl space-y-8">
+          <div className="text-center">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Contact Me
             </h2>
-            <p className="text-gray-600 md:text-lg">
+            <p className="text-gray-600 text-lg">
               Have a question or want to work together? Fill out the form below
               and I'll get back to you as soon as possible.
             </p>
           </div>
-          <form className="space-y-4" onSubmit={handleSubmit}>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <div className="space-y-2">
+          <form
+            className="bg-white shadow-lg rounded-lg p-8"
+            onSubmit={handleSubmit}
+          >
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div className="space-y-4">
                 <label
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-700"
@@ -88,10 +93,10 @@ function ContactMe() {
                   placeholder="Enter your name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                  className="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 ease-in-out"
                 />
               </div>
-              <div className="space-y-2">
+              <div className="space-y-4">
                 <label
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700"
@@ -105,11 +110,11 @@ function ContactMe() {
                   placeholder="Enter your email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+                  className="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 ease-in-out"
                 />
               </div>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-4 mt-6">
               <label
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-700"
@@ -122,12 +127,12 @@ function ContactMe() {
                 placeholder="Write your message here..."
                 value={formData.message}
                 onChange={handleChange}
-                className="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm min-h-[150px]"
+                className="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-200 ease-in-out min-h-[150px]"
               />
             </div>
             <button
               type="submit"
-              className="w-full px-4 py-2 font-medium text-white bg-black hover:bg-gray-800 rounded-md"
+              className="w-full mt-6 px-4 py-2 font-semibold text-white bg-black hover:bg-gray-800 rounded-lg transition duration-300 ease-in-out"
             >
               Send Message
             </button>
