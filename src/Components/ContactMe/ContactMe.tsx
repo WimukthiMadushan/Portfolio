@@ -62,7 +62,7 @@ function ContactMe() {
   };
 
   return (
-    <section className="bg-gray-50 py-16 md:py-24">
+    <section id="contact-me" className="bg-gray-50 py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl space-y-8">
           <div className="text-center">
