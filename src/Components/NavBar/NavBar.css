@@ -1,41 +1,23 @@
-/* NavBar.css */
+/* Base Styles */
+.not-scrolled {
+  background-color: black;
+}
 
 /* Glass Effect for Scrolled State */
 .scrolled {
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); /* For Safari */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
-  transition: background-color 0.3s, backdrop-filter 0.3s; /* Smooth transition */
-}
-
-/* Base Style for Navbar */
-.not-scrolled {
-  background-color: black; /* Solid background color when not scrolled */
-}
-
-/* NavBar.css */
-
-/* Glass Effect for Scrolled State */
-.scrolled {
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); /* For Safari */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
-  transition: background-color 0.3s, backdrop-filter 0.3s; /* Smooth transition */
-}
-
-/* Base Style for Navbar */
-.not-scrolled {
-  background-color: black; /* Solid background color when not scrolled */
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s, backdrop-filter 0.3s;
 }
 
 /* Underline Animation */
 .underline-animation {
   position: relative;
   display: inline-block;
-  text-decoration: none; /* Remove default underline */
-  color: inherit; /* Inherit text color */
+  text-decoration: none;
+  color: inherit;
 }
 
 .underline-animation::after {
@@ -56,50 +38,63 @@
   transform-origin: bottom left;
 }
 
-/* Responsive Styles */
+/* Navbar Menu Icon */
+.navbar-menu-icon {
+  display: block;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Hide the navbar links by default on small screens */
+.navbar-menu {
+  display: none;
+}
+
+.navbar-open {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Only display the menu on mobile when it is open */
 @media (max-width: 768px) {
   .navbar-menu {
     display: none;
-  }
-
-  .navbar-menu-icon {
-    display: block;
-    cursor: pointer;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
   }
 
   .navbar-open .navbar-menu {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-}
-
-@media (min-width: 769px) {
-  .navbar-menu-icon {
-    display: none;
-  }
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .navbar-menu {
-    display: none;
   }
 
   .navbar-menu-icon {
     display: block;
-    cursor: pointer;
-  }
-
-  .navbar-open .navbar-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
   }
 }
 
+/* For larger screens, show the full menu */
 @media (min-width: 769px) {
   .navbar-menu-icon {
     display: none;
+  }
+
+  .navbar-menu {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar-open {
+    display: flex;
   }
 }
