@@ -35,8 +35,8 @@ function Technologies() {
               Technologies
             </h2>
             <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Our team leverages the latest tools and frameworks to build
-              cutting-edge solutions.
+              I leverage the latest tools and frameworks to build cutting-edge
+              solutions.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-9">

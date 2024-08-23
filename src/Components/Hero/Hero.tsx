@@ -39,7 +39,7 @@ function Hero() {
             <p className="text-lg md:text-xl max-w-[600px] mx-auto mt-4 text-muted-foreground">
               Software Engineer | Full-Stack Developer
             </p>
-            <p className="mt-6 max-w-[700px] mx-auto text-muted-foreground">
+            <p className="mt-6 max-w-[700px] mx-auto text-muted-foreground text-[1rem]">
               Third-year Computer Science and Engineering student at the
               University of Moratuwa, specializing in software engineering, web,
               and mobile app development.

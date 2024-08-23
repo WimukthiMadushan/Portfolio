@@ -108,7 +108,9 @@ function Projects() {
                 <h3 className="text-xl font-bold text-gray-900">
                   {project.name}
                 </h3>
-                <p className="text-sm text-gray-600">{project.description}</p>
+                <p className="text-[1rem] text-gray-600">
+                  {project.description}
+                </p>
                 <Link
                   to={project.link}
                   className="text-blue-500 hover:text-black hover:underline"
