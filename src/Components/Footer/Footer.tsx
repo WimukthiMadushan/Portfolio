@@ -26,7 +26,9 @@ function Footer() {
           {/* Social Links */}
           <div className="flex flex-wrap justify-center items-center gap-6">
             <Link
-              to={"https://www.facebook.com"}
+              to={
+                "https://www.facebook.com/profile.php?id=100057304343669&mibextid=ZbWKwL"
+              }
               className="flex items-center gap-2 text-white hover:text-blue-500 transition duration-300 ease-in-out transform hover:scale-110"
               target="_blank"
               rel="noopener noreferrer"
