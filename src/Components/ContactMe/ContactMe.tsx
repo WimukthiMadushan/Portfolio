@@ -71,7 +71,8 @@ function ContactMe() {
             </h2>
             <p className="text-gray-600 text-lg">
               Have a question or want to work together? Fill out the form below
-              and I'll get back to you as soon as possible.
+              With your name and email address and I'll get back to you as soon
+              as possible.
             </p>
           </div>
           <form
@@ -84,7 +85,7 @@ function ContactMe() {
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Name
+                  Your Name
                 </label>
                 <input
                   type="text"
@@ -101,7 +102,7 @@ function ContactMe() {
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Email
+                  Enter Your Email Address.
                 </label>
                 <input
                   type="email"
@@ -119,7 +120,7 @@ function ContactMe() {
                 htmlFor="message"
                 className="block text-sm font-medium text-gray-700"
               >
-                Message
+                Enter Your Message
               </label>
               <textarea
                 id="message"
