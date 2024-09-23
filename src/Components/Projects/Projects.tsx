@@ -10,6 +10,7 @@ import ARS from "./../../Images/ARS.png";
 import NPD from "./../../Images/NPD.png";
 import AITP from "./../../Images/AITP.png";
 import vivado from "./../../Images/Vivado.png";
+import NA from "./../../Images/NA.jpg";
 
 function Projects() {
   const iconSize = "h-8 w-8";
@@ -73,6 +74,18 @@ function Projects() {
         "Second semester Computer Organization and Digital Design Course project. Designing a 4-bit nano processor.With apable of performing operations such as addition, subtraction, left shift, right shift, and negation.",
       link: "https://github.com/WimukthiMadushan/Computer-Organization-and-Digital-Design.git",
       technologies: [<img src={vivado} alt="Vivado" className={iconSize} />],
+    },
+    {
+      id: 6,
+      name: "News App",
+      image: NA,
+      description:
+        "Mobile news application using React Native that fetches real-time news data from the NewsData.io API.",
+      link: "https://github.com/WimukthiMadushan/News-App.git",
+      technologies: [
+        <TbBrandReactNative className={iconSize} />,
+        <SiExpo className={iconSize} />,
+      ],
     },
   ];
 
