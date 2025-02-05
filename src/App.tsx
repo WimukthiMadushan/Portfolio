@@ -9,6 +9,7 @@ import Technologies from "./Components/Technologies/Technologies";
 export default function App() {
   return (
     <div>
+      {/*Components are imported here*/}
       <NavBar />
       <Hero />
       <AboutMe />
