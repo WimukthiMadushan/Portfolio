@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaReact, FaNode } from "react-icons/fa";
-import { SiExpress, SiMysql, SiExpo, SiFlask } from "react-icons/si";
+import { SiExpress, SiMysql, SiFlask } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { RiFirebaseFill, RiNextjsFill } from "react-icons/ri";
 import { TbBrandCpp } from "react-icons/tb";
