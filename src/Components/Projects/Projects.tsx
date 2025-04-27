@@ -2,15 +2,20 @@ import { Link } from "react-router-dom";
 import { FaReact, FaNode } from "react-icons/fa";
 import { SiExpress, SiMysql, SiExpo, SiFlask } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
-import { RiFirebaseFill } from "react-icons/ri";
+import { RiFirebaseFill, RiNextjsFill } from "react-icons/ri";
 import { TbBrandCpp } from "react-icons/tb";
 import ILMS from "./../../Images/ILMS.png";
 import RPAL from "./../../Images/RPAL.png";
 import ARS from "./../../Images/ARS.png";
 import NPD from "./../../Images/NPD.png";
-import AITP from "./../../Images/AITP.png";
+import eWallet from "./../../Images/eWallet.png";
+import IssueTracker from "./../../Images/IssueTracker.png";
+import ZTN from "./../../Images/ZeroTrustNetwork.png"
+import NC from "./../../Images/Netflix Clone.png";
+import ARA from "./../../Images/Asgardio React Authentication.png"
+import ElaphantCare from "./../../Images/ElephantCare.png";
 import vivado from "./../../Images/Vivado.png";
-import NA from "./../../Images/NA.jpg";
+import { DiMongodb } from "react-icons/di";
 
 function Projects() {
   const iconSize = "h-8 w-8";
@@ -33,19 +38,79 @@ function Projects() {
     },
     {
       id: 2,
-      name: "AI Travel Planner App",
-      image: AITP,
+      name: "Zero Trust Network Frontend",
+      image: ZTN,
       description:
-        "AI-based travel planner app. Still ongoing project. Building with React Native, Expo, and Firebase authentication.The app provides detailed information on places, costs, and personalized recommendations based on the number of travelers (family, alone, or couples).",
-      link: "https://github.com/WimukthiMadushan/AI-Travel-Planner-App.git",
+        "A web-based Zero Trust Network Access (ZTNA) solution built with Next js and Firebase Authentication. It provides secure access to applications and resources without traditional VPNs.",
+      link: "https://github.com/WimukthiMadushan/Zero_Trust_Network.git",
       technologies: [
-        <TbBrandReactNative className={iconSize} />,
+        <RiNextjsFill className={iconSize} />,
         <RiFirebaseFill className={iconSize} />,
-        <SiExpo className={iconSize} />,
       ],
     },
     {
       id: 3,
+      name: "NetFlix Clone",
+      image: NC,
+      description:
+        "A Netflix clone built with React and Firebase. It allows users to browse and stream movies and TV shows, similar to the original Netflix app.",
+      link: "https://github.com/WimukthiMadushan/Netflix-Clone.git",
+      technologies: [
+        <FaReact className={iconSize} />,
+        <RiFirebaseFill className={iconSize} />,
+      ],
+    },
+    {
+      id: 4,
+      name: "eWallet Web Application",
+      image: eWallet,
+      description:
+        "A secure and responsive eWallet web application built with React, Node.js, Express, and MongoDB, featuring JWT-based user authentication.",
+      link: "https://github.com/WimukthiMadushan/eWallet.git",
+      technologies: [
+        <FaReact className={iconSize} />,
+        <FaNode className={iconSize} />,
+        <SiExpress className={iconSize} />,
+        <DiMongodb className={iconSize} />,
+      ],
+    },
+    {
+      id: 5,
+      name: "Asgardeo Authentication",
+      image: ARA,
+      description:
+        "A web-based authentication system built with React and Asgardeo. It provides secure user authentication and authorization for web applications.",
+      link: "https://github.com/WimukthiMadushan/Asgardeo-react-authentication.git",
+      technologies: [
+        <FaReact className={iconSize} />,
+      ],
+    },
+    {
+      id: 6,
+      name: "Issue Tracking System",
+      image: IssueTracker,
+      description:
+        "A web-based issue tracking system built with Next js and MySql. It allows users to create, manage, and track issues efficiently.",
+      link: "https://github.com/WimukthiMadushan/Issue-tracker-with-Next.js.git",
+      technologies: [
+        <RiNextjsFill className={iconSize} />,
+        <SiMysql className={iconSize} />,
+      ]
+    },
+    {
+      id: 7,
+      name: "Elaphant Care Frontend",
+      image: ElaphantCare,
+      description:
+        "A web-based elephant care management system built with React and Firebase. It provides features for managing and caring for elephants.",
+      link: "https://github.com/WimukthiMadushan/Elephant-care.git",
+      technologies: [
+        <FaReact className={iconSize} />,
+        <RiFirebaseFill className={iconSize} />,
+      ]
+    },
+    {
+      id: 8,
       name: "RPAL Interpreter",
       image: RPAL,
       description:
@@ -54,7 +119,7 @@ function Projects() {
       technologies: [<TbBrandCpp className={iconSize} />],
     },
     {
-      id: 4,
+      id: 9,
       name: "Airline Reservation System",
       image: ARS,
       description:
@@ -67,25 +132,13 @@ function Projects() {
       ],
     },
     {
-      id: 5,
+      id: 10,
       name: "Nano Processor Design",
       image: NPD,
       description:
         "Second semester Computer Organization and Digital Design Course project. Designing a 4-bit nano processor.With apable of performing operations such as addition, subtraction, left shift, right shift, and negation.",
       link: "https://github.com/WimukthiMadushan/Computer-Organization-and-Digital-Design.git",
       technologies: [<img src={vivado} alt="Vivado" className={iconSize} />],
-    },
-    {
-      id: 6,
-      name: "News App",
-      image: NA,
-      description:
-        "Mobile news application using React Native that fetches real-time news data from the NewsData.io API.",
-      link: "https://github.com/WimukthiMadushan/News-App.git",
-      technologies: [
-        <TbBrandReactNative className={iconSize} />,
-        <SiExpo className={iconSize} />,
-      ],
     },
   ];
 
