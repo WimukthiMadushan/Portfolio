@@ -1,201 +1,170 @@
-import { Link } from "react-router-dom";
-import { FaReact, FaNode } from "react-icons/fa";
-import { SiExpress, SiMysql, SiFlask } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
-import { RiFirebaseFill, RiNextjsFill } from "react-icons/ri";
-import { TbBrandCpp } from "react-icons/tb";
-import ILMS from "./../../Images/ILMS.png";
+
+import { Github as GithubIcon } from 'lucide-react';
+import { useState } from 'react';
+import ProjectCard from './ProjectCard';
+import Sanchaara from "./../../Images/Sanchaara.jpg";
+import CatDog from "./../../Images/CatDog.png"
+import AWS from "./../../Images/AWS.jpg"
+import Netflix from "./../../Images/Netflix.jpg"
+import ZTN from "./../../Images/ZTN.png"
+import NPD from "./../../Images/NPD.png"
 import RPAL from "./../../Images/RPAL.png";
 import ARS from "./../../Images/ARS.png";
-import NPD from "./../../Images/NPD.png";
-import eWallet from "./../../Images/eWallet.png";
-import IssueTracker from "./../../Images/IssueTracker.png";
-import ZTN from "./../../Images/ZeroTrustNetwork.png"
-import NC from "./../../Images/Netflix Clone.png";
-import ARA from "./../../Images/Asgardio React Authentication.png"
 import ElaphantCare from "./../../Images/ElephantCare.png";
-import vivado from "./../../Images/Vivado.png";
-import { DiMongodb } from "react-icons/di";
+import ARA from "./../../Images/Asgardio.png";
 
-function Projects() {
-  const iconSize = "h-8 w-8";
+const allProjects = [
+  {
+    title: "Potato Disease Classification Using CNN",
+    description: "Developed a deep learning pipeline using TensorFlow CNN to identify and classify potato leaf diseases. Built a Flask/FastAPI backend to serve model predictions with a user-friendly interface.",
+    image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&h=600&fit=crop",
+    technologies: ["Python", "Flask", "FastAPI", "TensorFlow", "CNN", "NumPy", "Matplotlib"],
+    githubUrl: "https://github.com/WimukthiMadushan/Deep-learning-project-Potato-Disease-Classification-Using-CNN.git"
+  },
+  {
+    title: "Sanchaara – Travel Companion",
+    description: "Backend-focused microservices architecture for a travel task-management app. Built with Spring Boot, Kafka-powered real-time communication, and Dockerized deployment for cloud readiness.",
+    image: Sanchaara,
+    technologies: ["Java", "Spring Boot", "Flutter", "Kafka", "Docker", "MongoDB", "PostgreSQL"],
+    githubUrl: "https://github.com/WimukthiMadushan/Sanchara-Backend.git"
+  },
+  {
+    title: "Interactive Library Management System (Web & Mobile)",
+    description: "A full-stack library management solution with React web UI, React Native mobile app, and Node.js/Express backend for book checkouts, user management, and search features.",
+    image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&h=600&fit=crop",
+    technologies: ["React.js", "React Native", "Node.js", "Express", "MySQL", "Expo", "CSS3"],
+    githubUrl: "https://github.com/WimukthiMadushan/Interactive-library-management-system.git"
+  },
+  {
+    title: "Deep Learning Image Classifier",
+    description: "Created a CNN-powered image classifier using TensorFlow and Keras to categorize Cats and Dogs. Built a Next js interface and integrated it with Flask Pandas/OpenCV for preprocessing and analytics.",
+    image: CatDog,
+    technologies: ["Python", "Flask", "TensorFlow", "Keras", "Pandas", "OpenCV"],
+    githubUrl: "https://github.com/WimukthiMadushan/Image-Classifier-CNN.git"
+  },
+  {
+    title: "Microservice Deployment on AWS with CI/CD",
+    description: "Deployed Java Spring Boot microservices on AWS EC2 with RDS backend, Dockerized each service, and implemented CI/CD via GitHub Actions for automated testing and deployment.",
+    image: AWS,
+    technologies: ["Java", "Spring Boot", "Docker", "AWS EC2", "AWS RDS", "MySQL", "GitHub Actions"],
+    githubUrl: "https://github.com/WimukthiMadushan/Complete-FullStack-Deployment.git"
+  },
+  {
+    title: "Netflix Clone with Firebase Authentication",
+    description: "Built a Netflix-style web app with React, featuring user signup/login via Firebase Authentication and dynamic show browsing UI powered by TMDb API.",
+    image: Netflix,
+    technologies: ["React", "Firebase Authentication"],
+    githubUrl: "https://github.com/WimukthiMadushan/Netflix-Clone.git"
+  },
+  {
+    title: "Zero Trust Network Frontend",
+    description: "A web-based Zero Trust Network Access (ZTNA) solution built with Next js and Firebase Authentication. It provides secure access to applications and resources without traditional VPNs",
+    image: ZTN,
+    technologies: ["Next Js", "Tailwind CSS", "TypeScript", "Radix UI", "Firebase Authentication"],
+    githubUrl: "https://github.com/WimukthiMadushan/Zero_Trust_Network.git"
+  },
+  {
+    title: "Elaphant Care Frontend",
+    description: "A web-based elephant care management system built with React and Firebase. It provides features for managing and caring for elephants.",
+    image: ElaphantCare,
+    technologies: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
+    githubUrl: "https://github.com/WimukthiMadushan/Elephant-care.git" 
+  },
+  {
+    title: "Asgardeo Authentication",
+    description: "A web-based authentication system built with React and Asgardeo. It provides secure user authentication and authorization for web applications.",
+    image: ARA,
+    technologies: ["React", "Asgardeo", "Tailwind CSS", "TypeScript"],
+    githubUrl: "https://github.com/WimukthiMadushan/Asgardeo-react-authentication.git"
+  },
+  {
+    title: "Airline Reservation System",
+    description: "Semester 3 Database Management System project. Contains a Web application. Based on the MySQL database. It allows users to search for flights, book tickets, and manage reservations.",
+    image: ARS,
+    technologies: ["React", "Flask", "MySQL", "HTML", "CSS"],
+    githubUrl: "https://github.com/WimukthiMadushan/Airline_Reservation_System.git"
+  },
+  {
+    title: "Nano Processor Design",
+    description: "Second semester Computer Organization and Digital Design Course project. Designing a 4-bit nano processor.With apable of performing operations such as addition, subtraction, left shift, right shift, and negation.",
+    image: NPD,
+    technologies: ["Xilinx Vivado", "Digital Design"],
+    githubUrl: "https://github.com/WimukthiMadushan/Computer-Organization-and-Digital-Design.git"
+  },
+  {
+    title: "RPAL Interpreter",
+    description: "An interpreter for RPAL Programming Lanuage, consisting of a lexical analyzer, parser, and a CSE machine. Evaluate RPAL Program by Constructing Parse Tree and then Evaluating the Parse Tree using CSE Machine.",
+    image: RPAL,
+    technologies: ["C++"],
+    githubUrl: "https://github.com/WimukthiMadushan/Programming-Languages.git"
+  }
+];
 
-  const projects = [
-    {
-      id: 1,
-      name: "Library Management System",
-      image: ILMS,
-      description:
-        "Semester five project for the course of Software Engineering. Still ongoing project and will be completed by the end of the semester. Contains Web and mobile application for efficient book management and user interaction.",
-      link: "https://github.com/WimukthiMadushan/Interactive-library-management-system-.git",
-      technologies: [
-        <FaReact className={iconSize} />,
-        <FaNode className={iconSize} />,
-        <SiExpress className={iconSize} />,
-        <SiMysql className={iconSize} />,
-        <TbBrandReactNative className={iconSize} />,
-      ],
-    },
-    {
-      id: 2,
-      name: "Zero Trust Network Frontend",
-      image: ZTN,
-      description:
-        "A web-based Zero Trust Network Access (ZTNA) solution built with Next js and Firebase Authentication. It provides secure access to applications and resources without traditional VPNs.",
-      link: "https://github.com/WimukthiMadushan/Zero_Trust_Network.git",
-      technologies: [
-        <RiNextjsFill className={iconSize} />,
-        <RiFirebaseFill className={iconSize} />,
-      ],
-    },
-    {
-      id: 3,
-      name: "NetFlix Clone",
-      image: NC,
-      description:
-        "A Netflix clone built with React and Firebase. It allows users to browse and stream movies and TV shows, similar to the original Netflix app.",
-      link: "https://github.com/WimukthiMadushan/Netflix-Clone.git",
-      technologies: [
-        <FaReact className={iconSize} />,
-        <RiFirebaseFill className={iconSize} />,
-      ],
-    },
-    {
-      id: 4,
-      name: "eWallet Web Application",
-      image: eWallet,
-      description:
-        "A secure and responsive eWallet web application built with React, Node.js, Express, and MongoDB, featuring JWT-based user authentication.",
-      link: "https://github.com/WimukthiMadushan/eWallet.git",
-      technologies: [
-        <FaReact className={iconSize} />,
-        <FaNode className={iconSize} />,
-        <SiExpress className={iconSize} />,
-        <DiMongodb className={iconSize} />,
-      ],
-    },
-    {
-      id: 5,
-      name: "Asgardeo Authentication",
-      image: ARA,
-      description:
-        "A web-based authentication system built with React and Asgardeo. It provides secure user authentication and authorization for web applications.",
-      link: "https://github.com/WimukthiMadushan/Asgardeo-react-authentication.git",
-      technologies: [
-        <FaReact className={iconSize} />,
-      ],
-    },
-    {
-      id: 6,
-      name: "Issue Tracking System",
-      image: IssueTracker,
-      description:
-        "A web-based issue tracking system built with Next js and MySql. It allows users to create, manage, and track issues efficiently.",
-      link: "https://github.com/WimukthiMadushan/Issue-tracker-with-Next.js.git",
-      technologies: [
-        <RiNextjsFill className={iconSize} />,
-        <SiMysql className={iconSize} />,
-      ]
-    },
-    {
-      id: 7,
-      name: "Elaphant Care Frontend",
-      image: ElaphantCare,
-      description:
-        "A web-based elephant care management system built with React and Firebase. It provides features for managing and caring for elephants.",
-      link: "https://github.com/WimukthiMadushan/Elephant-care.git",
-      technologies: [
-        <FaReact className={iconSize} />,
-        <RiFirebaseFill className={iconSize} />,
-      ]
-    },
-    {
-      id: 8,
-      name: "RPAL Interpreter",
-      image: RPAL,
-      description:
-        "An interpreter for RPAL Programming Lanuage, consisting of a lexical analyzer, parser, and a CSE machine. Evaluate RPAL Program by Constructing Parse Tree and then Evaluating the Parse Tree using CSE Machine.",
-      link: "https://github.com/WimukthiMadushan/Programming-Languages.git",
-      technologies: [<TbBrandCpp className={iconSize} />],
-    },
-    {
-      id: 9,
-      name: "Airline Reservation System",
-      image: ARS,
-      description:
-        "Semester 3 Database Management System project. Contains a Web application. Based on the MySQL database.",
-      link: "https://github.com/WimukthiMadushan/Airline_Reservation_System.git",
-      technologies: [
-        <FaReact className={iconSize} />,
-        <SiFlask className={iconSize} />,
-        <SiMysql className={iconSize} />,
-      ],
-    },
-    {
-      id: 10,
-      name: "Nano Processor Design",
-      image: NPD,
-      description:
-        "Second semester Computer Organization and Digital Design Course project. Designing a 4-bit nano processor.With apable of performing operations such as addition, subtraction, left shift, right shift, and negation.",
-      link: "https://github.com/WimukthiMadushan/Computer-Organization-and-Digital-Design.git",
-      technologies: [<img src={vivado} alt="Vivado" className={iconSize} />],
-    },
-  ];
+
+const ProjectsSection = () => {
+
+  const [showAll, setShowAll] = useState(false);
+  const visibleProjects = showAll ? allProjects : allProjects.slice(0, 6);
 
   return (
-    <section
-      className="w-full py-12 md:py-24 lg:py-32 bg-gray-100"
-      id="projects"
-    >
-      <div className="container mx-auto grid gap-8 px-4 md:px-6">
-        <div className="space-y-3 text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+    <section id="projects" className="py-10 bg-gradient-to-br from-gray-50 to-white min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 animate-fade-in">
             My Projects
           </h2>
-          <p className="mx-auto max-w-2xl text-gray-600 md:text-xl lg:text-base xl:text-xl">
-            Check out some of the projects I've worked on. Each one showcases my
-            skills and creativity.
+          <div className="w-24 h-1 bg-gradient-to-r from-gray-600 to-gray-400 mx-auto mb-6 rounded-full animate-scale-in"></div>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '200ms' }}>
+            Explore my latest work and projects that showcase my passion for creating innovative, 
+            user-friendly solutions with modern technologies.
           </p>
         </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
-            >
-              <div className="p-4">
-                <img
-                  src={project.image}
-                  alt="Project Thumbnail"
-                  className="w-full h-64 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div className="bg-white p-4">
-                <h3 className="text-xl font-bold text-gray-900">
-                  {project.name}
-                </h3>
-                <p className="text-[1rem] text-gray-600">
-                  {project.description}
-                </p>
-                <Link
-                  to={project.link}
-                  className="text-blue-500 hover:text-black hover:underline"
-                  target="_blank"
-                >
-                  View On Github
-                </Link>
-                <div className="mt-2 flex items-center gap-2 text-xs text-gray-500">
-                  {project.technologies.map((tech, index) => (
-                    <div key={index}>{tech}</div>
-                  ))}
-                </div>
-              </div>
-            </div>
+
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {visibleProjects.map((project, index) => (
+            <ProjectCard
+              key={project.title}
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              technologies={project.technologies}
+              githubUrl={project.githubUrl}
+              index={index}
+            />
           ))}
+        </div>
+        {!showAll && (
+          <div className="text-center mt-12">
+            <button
+              onClick={() => setShowAll(true)}
+              className="px-6 py-3 bg-gray-900 text-white rounded-full font-semibold hover:bg-gray-800 transform hover:scale-105 transition-all duration-300 shadow-md"
+            >
+              View More Projects
+            </button>
+          </div>
+        )}
+
+        {/* Call to Action */}
+        <div className="text-center mt-16">
+          <p className="text-gray-600 mb-6 animate-fade-in" style={{ animationDelay: '1s' }}>
+            Want to see more of my work?
+          </p>
+          <a
+            href="https://github.com/WimukthiMadushan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-gray-900 text-white px-8 py-4 rounded-full font-semibold hover:bg-gray-800 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in"
+            style={{ animationDelay: '1.2s' }}
+          >
+            <GithubIcon className="w-5 h-5" />
+            View All Projects on GitHub
+          </a>
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Projects;
+export default ProjectsSection;

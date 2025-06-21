@@ -10,7 +10,8 @@ function AboutMe() {
             About Me
           </h2>
           <p className="text-lg text-gray-700">
-            Hi, I'm a Computer Science and Engineering student at the University of Moratuwa. I'm passionate about becoming a software engineer and currently working as a Software Engineer Intern at Scienter Technologies (Pvt) Ltd. I have a strong interest in full-stack web development and love working on projects that bring ideas to life. I'm also keen on learning how to design and build software that is easy to use and reliable. I'm eager to grow my skills and contribute to real-world software projects.
+            Hi, I'm a Computer Science and Engineering student at the University of Moratuwa. I'm passionate about becoming a software engineer and Just Completed my Intern at Scienter Technologies (Pvt) Ltd. I have a strong interest in full-stack web development and love working on projects that bring ideas to life. I'm also keen on learning how to design and build software that is easy to use and reliable. I'm eager to grow my skills and contribute to real-world software projects.
+            I enjoy building dynamic, scalable web and mobile applications. I'm also deeply interested in artificial intelligence and love exploring how machine learning can power smarter, more intuitive solutions.
           </p>
         </div>
         <div className="grid gap-6">

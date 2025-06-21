@@ -19,6 +19,7 @@ import {
   SiMysql,
   SiVisualstudiocode,
   SiDocker,
+  SiFlask, SiFastapi, SiTensorflow, SiPostgresql 
 } from "react-icons/si";
 import "./Technologies.css";
 
@@ -40,6 +41,22 @@ function Technologies() {
             </p>
           </div>
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-9">
+            <div className="technology-item duration-1">
+              <SiFlask className="icon" />
+              <span className="text-sm font-medium">Flask</span>
+            </div>
+            <div className="technology-item duration-2">
+              <SiFastapi className="icon" />
+              <span className="text-sm font-medium">FastAPI</span>
+            </div>
+            <div className="technology-item duration-3">
+              <SiTensorflow className="icon" />
+              <span className="text-sm font-medium">TensorFlow</span>
+            </div>
+            <div className="technology-item duration-4">
+              <SiPostgresql className="icon" />
+              <span className="text-sm font-medium">PostgreSQL</span>
+            </div>
             <div className="technology-item duration-1">
               <FaReact className="icon" />
               <span className="text-sm font-medium">React</span>
