@@ -37,7 +37,7 @@ function Hero() {
               />
             </h1>
             <p className="text-lg md:text-xl max-w-[600px] mx-auto mt-4 text-muted-foreground">
-                Computer Science Undergraduate | Full-Stack Developer | AI Enthusiast
+                Computer Science Undergraduate | Full-Stack Developer
             </p>
             <p className="mt-6 max-w-[700px] mx-auto text-muted-foreground text-[1rem] leading-relaxed">
               I'm a passionate Computer Science and Engineering undergraduate from the University of Moratuwa, recently completed my internship as a Software Engineer at Scienter Technologies (Pvt) Ltd. With a strong foundation in full-stack development.
