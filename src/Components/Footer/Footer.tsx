@@ -6,7 +6,7 @@ import {
   FaGithub,
   FaWhatsapp,
 } from "react-icons/fa";
-import { LuArrowUpSquare } from "react-icons/lu";
+import { LuArrowUpAZ } from "react-icons/lu";
 
 function Footer() {
   return (
@@ -102,7 +102,7 @@ function Footer() {
             className="text-white p-3 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-125"
             title="Back to Top"
           >
-            <LuArrowUpSquare className="h-8 w-8 animate-bounce infinite" />
+            <LuArrowUpAZ className="h-8 w-8 animate-bounce infinite" />
           </Link>
         </div>
       </div>

@@ -17,7 +17,6 @@ import {
   SiExpress,
   SiCplusplus,
   SiMysql,
-  SiVisualstudiocode,
   SiDocker,
   SiFlask, SiFastapi, SiTensorflow, SiPostgresql 
 } from "react-icons/si";
@@ -120,10 +119,6 @@ function Technologies() {
             <div className="technology-item duration-16">
               <SiMysql className="icon" />
               <span className="text-sm font-medium">MySQL</span>
-            </div>
-            <div className="technology-item duration-17">
-              <SiVisualstudiocode className="icon" />
-              <span className="text-sm font-medium">VS Code</span>
             </div>
             <div className="technology-item duration-18">
               <SiDocker className="icon" />
