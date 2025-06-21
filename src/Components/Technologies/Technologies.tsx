@@ -18,7 +18,7 @@ import {
   SiCplusplus,
   SiMysql,
   SiDocker,
-  SiFlask, SiFastapi, SiTensorflow, SiPostgresql 
+  SiFlask, SiFastapi, SiTensorflow, SiPostgresql,SiAngular 
 } from "react-icons/si";
 import "./Technologies.css";
 
@@ -123,6 +123,10 @@ function Technologies() {
             <div className="technology-item duration-18">
               <SiDocker className="icon" />
               <span className="text-sm font-medium">Docker</span>
+            </div>
+            <div className="technology-item duration-19">
+              <SiAngular className="icon" />
+              <span className="text-sm font-medium">Angular</span>
             </div>
           </div>
         </div>
