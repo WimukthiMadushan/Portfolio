@@ -1,100 +1,171 @@
-/* Base Styles */
-.not-scrolled {
-  background-color: black;
-}
-
-/* Glass Effect for Scrolled State */
-.scrolled {
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s, backdrop-filter 0.3s;
-}
-
-/* Underline Animation */
-.underline-animation {
+/* Modern Navbar Enhancements */
+.navbar-glow {
   position: relative;
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
 }
 
-.underline-animation::after {
+.navbar-glow::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(59, 130, 246, 0.1),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.navbar-glow:hover::before {
+  opacity: 1;
+}
+
+/* Floating Navigation Dots Animation */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.nav-dot-active {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Enhanced Glass Morphism */
+.glass-nav {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Smooth Mobile Menu Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-menu-item {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+/* Gradient Text Animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text-animated {
+  background: linear-gradient(-45deg, #3b82f6, #8b5cf6, #06b6d4, #10b981);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease infinite;
+}
+
+/* Hover Effects */
+.nav-item-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item-hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.nav-item-hover:hover::before {
+  left: 100%;
+}
+
+/* Social Icons Hover Effect */
+.social-icon {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.social-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.3) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.social-icon:hover::after {
+  width: 50px;
+  height: 50px;
+}
+
+/* Loading Animation for Active States */
+@keyframes loadingBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.loading-bar {
+  animation: loadingBar 0.5s ease-out forwards;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 2px;
-  background-color: white;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-}
-
-.underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-/* Navbar Menu Icon */
-.navbar-menu-icon {
-  display: block;
-  cursor: pointer;
-  font-size: 1rem; /* Reduced size for a more compact appearance */
-  color: white;
-}
-
-/* Hide the navbar links by default on small screens */
-.navbar-menu {
-  display: none;
-}
-
-.navbar-open {
-  display: flex;
-  flex-direction: column;
-  gap: 12px; /* Reduced gap between items */
-  align-items: center;
-}
-
-/* Only display the menu on mobile when it is open */
-@media (max-width: 768px) {
-  .navbar-menu {
-    display: none;
-    position: absolute;
-    top: 60px; /* Adjusted to fit the new height */
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    flex-direction: column;
-    align-items: center;
-    padding: 5px 0; /* Reduced padding */
-  }
-
-  .navbar-open .navbar-menu {
-    display: flex;
-  }
-
-  .navbar-menu-icon {
-    display: block;
-  }
-}
-
-/* For larger screens, show the full menu */
-@media (min-width: 769px) {
-  .navbar-menu-icon {
-    display: none;
-  }
-
-  .navbar-menu {
-    display: flex;
-    gap: 12px; /* Reduced gap */
-    justify-content: center;
-    width: 100%;
-  }
-
-  .navbar-open {
-    display: flex;
-  }
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #06b6d4);
+  transform-origin: left;
+  z-index: 1000;
+  transition: transform 0.3s ease;
 }
