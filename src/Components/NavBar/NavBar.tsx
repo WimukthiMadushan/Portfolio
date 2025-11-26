@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
-import { HomeIcon, UserIcon, CodeBracketIcon, BriefcaseIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
+import {
+  HomeIcon,
+  UserIcon,
+  CodeBracketIcon,
+  BriefcaseIcon,
+  EnvelopeIcon,
+} from "@heroicons/react/24/outline";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -11,18 +17,27 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-      
+
       // Update active section based on scroll position
-      const sections = ["hero", "about-me", "technologies", "projects", "contact-me"];
+      const sections = [
+        "hero",
+        "about-me",
+        "technologies",
+        "projects",
+        "contact-me",
+      ];
       const scrollPosition = window.scrollY + 100;
-      
+
       for (const sectionId of sections) {
         const element = document.getElementById(sectionId);
         if (element) {
           const offsetTop = element.offsetTop;
           const offsetHeight = element.offsetHeight;
-          
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
             setActiveSection(sectionId);
             break;
           }
@@ -120,7 +135,11 @@ export default function Navbar() {
                 onClick={toggleMenu}
                 className="md:hidden p-2 text-gray-700 hover:text-black hover:bg-gray-100 rounded-lg transition-all duration-300"
               >
-                {isMenuOpen ? <FaTimes className="w-6 h-6" /> : <FaBars className="w-6 h-6" />}
+                {isMenuOpen ? (
+                  <FaTimes className="w-6 h-6" />
+                ) : (
+                  <FaBars className="w-6 h-6" />
+                )}
               </button>
             </div>
           </div>
@@ -151,7 +170,7 @@ export default function Navbar() {
                   </Link>
                 );
               })}
-              
+
               {/* Mobile Social Links */}
               <div className="flex items-center justify-center space-x-6 pt-4 mt-4 border-t border-gray-200">
                 <a
@@ -179,7 +198,7 @@ export default function Navbar() {
       {/* Floating Navigation Indicator (Optional) */}
       <div className="fixed right-8 top-1/2 transform -translate-y-1/2 z-40 hidden lg:block">
         <div className="space-y-3">
-          {navItems.map((item, index) => {
+          {navItems.map((item) => {
             const isActive = activeSection === item.to.slice(1);
             return (
               <Link
@@ -187,9 +206,7 @@ export default function Navbar() {
                 to={item.to}
                 smooth
                 className={`block w-3 h-3 rounded-full transition-all duration-300 hover:scale-150 ${
-                  isActive
-                    ? "bg-black scale-125"
-                    : "bg-gray-400 hover:bg-black"
+                  isActive ? "bg-black scale-125" : "bg-gray-400 hover:bg-black"
                 }`}
                 title={item.label}
               />
