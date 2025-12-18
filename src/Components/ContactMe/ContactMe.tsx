@@ -87,7 +87,7 @@ function ContactMe() {
                   <div>
                     <div className="text-sm text-gray-500">Email</div>
                     <div className="text-gray-900 font-medium">
-                      your.email@example.com
+                      wimukthibandara928@gmail.com
                     </div>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ function ContactMe() {
                   <div>
                     <div className="text-sm text-gray-500">Location</div>
                     <div className="text-gray-900 font-medium">
-                      Your City, Country
+                      Colombo , Sri lanka
                     </div>
                   </div>
                 </div>

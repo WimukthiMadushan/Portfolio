@@ -22,25 +22,18 @@ import ARA from "./../../Images/Asgardio.png";
 
 const allProjects = [
   {
-    title: "Final Year Research Project",
+    title: "GNN based Vector borne disease forecasting (Final Year Project)",
     description:
-      "Advanced AI/ML research project developing cutting-edge machine learning solutions. Focusing on innovative applications of deep learning, computer vision, and natural language processing technologies for real-world problem solving.",
+      "Developed a Spatial Temporal Graph Neural Network (ST-GNN) model to predict dengue cases across Sri Lankan districts. Collected and processed epidemiological and meteorological data for model training. Experiment with different GNN architectures to improve prediction performance. Compared GNN results against benchmark machine learning models.",
     image:
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
-    technologies: [
-      "Deep Learning",
-      "Computer Vision",
-      "Natural Language Processing",
-      "TensorFlow",
-      "PyTorch",
-      "Research & Innovation",
-    ],
+    technologies: ["GNN", "Python"],
     githubUrl: "#", // Will be updated when research is complete
     category: "ai",
     featured: true,
     isResearch: true,
     status: "In Progress",
-    duration: "2024-2025",
+    duration: "Jul 2025 - Apr 2026",
   },
   {
     title: "JobAlign.AI Mobile Application",
